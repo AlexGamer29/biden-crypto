@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./navbar.css";
+import "./NavBar.css";
 
-function Navbar() {
+function NavBar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -11,7 +11,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            CodeBucks
+            Biden-Cypto
             <i className="fas fa-code"></i>
           </NavLink>
 
@@ -70,4 +70,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;

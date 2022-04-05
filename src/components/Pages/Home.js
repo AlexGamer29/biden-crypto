@@ -1,11 +1,9 @@
-
-  
 import React from "react";
 
-export const Contact = () => {
+export const Home = () => {
   return (
     <div>
-      <h1>Contact Us</h1>
+      <h1>Home</h1>
     </div>
   );
 };
