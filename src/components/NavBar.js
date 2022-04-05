@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
+import logo from "../assets/img/Biden-crypto-rectangular.png";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -11,8 +12,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            Biden-Cypto
-            <i className="fas fa-code"></i>
+            <img src={logo} alt="logo" className="biden-logo"/>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>

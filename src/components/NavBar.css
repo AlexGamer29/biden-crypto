@@ -29,6 +29,13 @@
   flex-grow: 1;
 }
 
+.biden-logo {
+  width: auto;
+  height: auto;
+  max-width: 160px;
+  max-height: 160px;
+}
+
 .nav-menu {
   display: flex;
   list-style: none;
