@@ -6,14 +6,15 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
     /* background-color: blue; */
 }
-.leftSide {
+.leftSide1 {
     width: 50%;
     /* background-color: black; */
 }
 
-.leftSide h1 {
+.leftSide1 h1 {
     font-family: BinancePlex,Arial,sans-serif!important;
     font-size: 65px;
     color: azure;
@@ -23,6 +24,14 @@
     margin-top: 40px;
     margin-bottom: 0px;
 }
+
+.leftSide1 h4 {
+    font-size: 25px;
+    margin-left: 90px;
+    text-align: left;
+
+}
+
 
 #bt {
     cursor: pointer;
@@ -59,9 +68,45 @@
 
 .rightSide {
     width: 50%;
+    margin-left: 20px;
 }
 
 #body-img {
     width: 70%; 
     background-color: transparent;   
+}
+
+#ct2_h1 {
+    font-size: 38px;
+}
+
+#ct2_h6 {
+    font-size: 20px;
+}
+
+.content2 {
+    /* Delete this line below when you add animation */
+    margin-top: 250px;
+    width: 100%;    
+}
+
+.in_content2 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 776px;
+}
+
+.leftSide2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+.box1, box2, box3 {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
 }
