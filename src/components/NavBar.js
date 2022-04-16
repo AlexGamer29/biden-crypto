@@ -12,7 +12,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            <img src={logo} alt="logo" className="biden-logo"/>
+            <img src={logo} alt="logo" className="biden-logo" />
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -58,6 +58,17 @@ function NavBar() {
                 onClick={handleClick}
               >
                 Contact Us
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/Signin"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Sign in
               </NavLink>
             </li>
           </ul>
