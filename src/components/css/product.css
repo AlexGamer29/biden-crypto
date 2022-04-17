@@ -1,0 +1,36 @@
+.main_contain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.card{
+    width: 8%;
+    padding: 20px;
+    background-color: white;
+    margin-left: 90px;
+    border: 3px solid;
+    border-radius: 10px;
+}
+.card:hover{
+    width: 8.5%;
+}
+.card_img img{
+    width: 100% ;
+}
+.card_header{
+    font-size: 20px;
+}
+.btn_add{
+    width: 90%;
+    height: 30px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+.btn_add:hover{
+    background-color: black;
+    color: yellow;
+}
