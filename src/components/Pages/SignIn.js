@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../css/signIn.css";
 import logo from "../../assets/img/Biden-crypto-rectangular.png";
 import FormInput from "./FormInput";
+import Footer from "./Footer";
 
 const SignIn = () => {
   const [values, setValues] = useState({
