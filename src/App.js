@@ -6,7 +6,7 @@ import { About } from "./components/Pages/About";
 
 import { Contact } from "./components/Pages/Contact";
 import { Product } from "./components/Pages/Product";
-import { SignIn } from "./components/Pages/SignIn";
+import SignIn from "./components/Pages/SignIn";
 
 function App() {
   return (
