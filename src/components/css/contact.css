@@ -1,0 +1,41 @@
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.gform_legacy_markup_wrapper {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    max-width: 100%;
+}
+
+.gform_legacy_markup_wrapper form {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    max-width: 100%;
+}
+
+.gform_legacy_markup_wrapper *,
+.gform_legacy_markup_wrapper :after,
+.gform_legacy_markup_wrapper :before {
+    box-sizing: border-box !important;
+}
+
+@media only screen and (min-width: 641px) {
+    .gform_legacy_markup_wrapper .gform_body {
+        width: 100%;
+    }
+}
+
+.gform_legacy_markup_wrapper .gform_footer {
+    padding: 16px 0 10px 0;
+    margin: 16px 0 0 0;
+    clear: both;
+    width: 100%;
+}
