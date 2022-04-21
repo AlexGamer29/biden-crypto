@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import FormSelector from "./FormSelector";
 import "../css/formInput.css";
 
 const FormInput = (props) => {
@@ -25,5 +26,4 @@ const FormInput = (props) => {
     </div>
   );
 };
-
 export default FormInput;

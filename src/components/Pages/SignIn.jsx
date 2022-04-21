@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/signIn.css";
 import logo from "../../assets/img/Biden-crypto-rectangular.png";
-import FormInput from "./FormInput";
+import FormInput from "./FormInput.jsx";
 import Footer from "./Footer";
 
 const SignIn = () => {
@@ -12,6 +12,15 @@ const SignIn = () => {
     password: "",
     confirmPassword: "",
   });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(values);
+  };
+
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
 
   const inputs = [
     {
@@ -41,18 +50,17 @@ const SignIn = () => {
       placeholder: "Fullname",
       errorMessage: "Your name is empty",
       label: "Fullname",
-      pattern: `^[w'-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[]]{2,}$`,
-      required: true,
+      pattern: "^[a-zA-Z].*[\s\.]*$",
     },
     {
       id: 4,
       name: "password",
-      type: "text",
+      type: "password",
       placeholder: "Password",
       errorMessage:
         "Password must be at least 8 characters and include at least 1 number, 1 uppercase letter, 1 lowercase letter and 1 special character",
       label: "Password",
-      pattern: "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$",
+      pattern: `^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$`,
       required: true,
     },
     {
@@ -66,16 +74,6 @@ const SignIn = () => {
       required: true,
     },
   ];
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
-  const onChange = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
-  };
-
-  console.log(values);
 
   return (
     <div className="form">

@@ -1,41 +1,33 @@
-*,
-:after,
-:before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div {
-    display: block;
+form {
+    background-color: white;
+    padding: 0px 60px;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
 
-.gform_legacy_markup_wrapper {
-    margin-bottom: 16px;
-    margin-top: 16px;
-    max-width: 100%;
+h1 {
+    color: black;
+    text-align: left;
+    font-size: 1.5em;
 }
 
-.gform_legacy_markup_wrapper form {
-    margin-bottom: 16px;
-    margin-top: 16px;
-    max-width: 100%;
-}
-
-.gform_legacy_markup_wrapper *,
-.gform_legacy_markup_wrapper :after,
-.gform_legacy_markup_wrapper :before {
-    box-sizing: border-box !important;
-}
-
-@media only screen and (min-width: 641px) {
-    .gform_legacy_markup_wrapper .gform_body {
-        width: 100%;
-    }
-}
-
-.gform_legacy_markup_wrapper .gform_footer {
-    padding: 16px 0 10px 0;
-    margin: 16px 0 0 0;
-    clear: both;
+button {
     width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: yellow;
+    color: black;
+    border-radius: 5;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
