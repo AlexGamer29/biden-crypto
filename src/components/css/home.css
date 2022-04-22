@@ -3,11 +3,15 @@
 }
 
 .content1 {
-    width: 100%;
+    width: max-content;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     /* background-color: blue; */
+}
+
+.content1 div {
+    flex: 1;
 }
 .leftSide1 {
     width: 50%;
@@ -67,12 +71,13 @@
 }
 
 .rightSide {
-    width: 50%;
+    width: fit-content;
     margin-left: 20px;
+    float: right;
 }
 
 #body-img {
-    width: 70%; 
+    width: 100%; 
     background-color: transparent;   
 }
 
