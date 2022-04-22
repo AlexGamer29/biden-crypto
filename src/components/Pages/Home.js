@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/home.css';
+import phoneImage from '../../assets/img/img-home_page-content1.png';
 
 export const Home = () => {
   return (
@@ -13,7 +14,7 @@ export const Home = () => {
             </button> */}
         </div>
         <div className="rightSide1">
-          <img id="body-img" src="../../assets/img/img-home_page-content1.png" alt="IMG">
+          <img id="body-img" src={phoneImage} alt="IMG">
           </img>
         </div>
       </div>

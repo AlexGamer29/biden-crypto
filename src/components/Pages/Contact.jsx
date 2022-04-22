@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormInput from "./FormInput.jsx";
+import Hooks from "./Hooks.jsx";
 import "../css/contact.css";
 
 export const Contact = () => {
@@ -57,7 +58,7 @@ export const Contact = () => {
             onChange={onChange}
           />
         ))}
-
+        <Hooks/>
         <button>Sign In</button>
       </form>
     </div>
