@@ -35,7 +35,10 @@ export const About = () => {
             <p>Tran Cong Thanh</p>
           </div>
         </div>
+      </div>
 
+      <div className="content3">
+        
       </div>
 
 
