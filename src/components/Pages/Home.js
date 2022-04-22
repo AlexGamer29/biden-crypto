@@ -13,7 +13,7 @@ export const Home = () => {
             </button> */}
         </div>
         <div className="rightSide1">
-          <img id="body-img" src="https://media4.giphy.com/media/JpttR9RXNbTwoT7jAz/giphy.gif?cid=6c09b952fmp52q6kaxv6olp195pk4k4q4v3vky6jz4yibmnx&rid=giphy.gif&ct=s" alt="IMG">
+          <img id="body-img" src="https://static.vecteezy.com/system/resources/previews/004/617/394/non_2x/bitcoin-wallet-smartphone-interface-template-mobile-app-page-white-design-layout-cryptocurrency-organizer-screen-flat-ui-for-application-monetary-transactions-phone-display-vector.jpg" alt="IMG">
           </img>
         </div>
       </div>
