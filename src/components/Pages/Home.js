@@ -1,5 +1,7 @@
 import React from "react";
 import '../css/home.css';
+import imgContent1 from "../assets/img/img-home_page-content1.jpeg";
+
 
 export const Home = () => {
   return (
@@ -13,7 +15,7 @@ export const Home = () => {
             </button> */}
         </div>
         <div className="rightSide1">
-          <img id="body-img" src="https://static.vecteezy.com/system/resources/previews/004/617/394/non_2x/bitcoin-wallet-smartphone-interface-template-mobile-app-page-white-design-layout-cryptocurrency-organizer-screen-flat-ui-for-application-monetary-transactions-phone-display-vector.jpg" alt="IMG">
+          <img id="body-img" src={imgContent1} alt="IMG">
           </img>
         </div>
       </div>
