@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FormSelector from "./FormSelector";
+
 import "../css/formInput.css";
 
 const FormInput = (props) => {
