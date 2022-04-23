@@ -14,8 +14,10 @@ export const Home = () => {
             </button> */}
         </div>
         <div className="rightSide1">
-          <img id="body-img" src={phoneImage} alt="IMG">
-          </img>
+          <div>
+            <img id="body-img" src={phoneImage} alt="IMG">
+            </img>
+          </div>
         </div>
       </div>
       <div className="content2">

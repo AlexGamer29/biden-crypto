@@ -36,40 +36,6 @@
 
 }
 
-
-#bt {
-    cursor: pointer;
-    color: white;
-    background-color: transparent;
-    outline: none;
-    border: 0;
-    padding: 15px 30px;
-    border-radius: 4px;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    width: 30%;
-}
-
-#bt::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: auto;
-    right: 0;
-    z-index: -1;
-    transition: all 0.2s linear;
-    width: 0;
-    height: 100%;
-    background-color: #6a5af9;
-}
-
-#bt:hover::before {
-    left: 0;
-    width: 100%;
-    right: auto;
-}
-
 .rightSide {
     width: fit-content;
     margin-left: 20px;
