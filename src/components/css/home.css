@@ -6,7 +6,7 @@
     width: max-content;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 5px;
     /* background-color: blue; */
 }
 
@@ -15,12 +15,10 @@
 }
 .leftSide1 {
     width: 50%;
-    margin-top: 70px;
-    margin-right: 150px;
+    margin-top: 90px;
+    margin-right: 80px;
     display: flex;
     flex-direction: column;
-
-    /* background-color: black; */
 }
 
 .leftSide1 a {
@@ -63,14 +61,14 @@
 .border-img {
     align-self: center;
     width: 35%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 130px;
-    border: 2px solid gray;
+    /* border: 2px solid gray;
     border-radius: 2%;
 
     -moz-box-shadow: 10px 10px 5px #ccc;
     -webkit-box-shadow: 10px 10px 5px #ccc;
-    -khtml-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc; */
 }
 
 #body-img {
@@ -94,7 +92,7 @@
 }
 
 .in_content2 {
-    margin-top: 120px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -105,15 +103,29 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 100%;
+    margin-top: 40px;
     margin-left: 100px;
     margin-right: 10px;
 }
 
+
 .box1, .box2, .box3 {
-    height: 30%;
+    height: 20%;
+    margin: 30px;
     display: flex;
     flex-direction: row;
+}
+
+.leftSide2 h1 {
+        font-size: 22px;
+        margin-bottom: 7px;
+        text-align: left;
+}
+
+.leftSide2 h6 {
+    font-size: 17px;   
+    font-family: "Times New Roman", Georgia, serif; 
+    text-align: left;
 }
 
 .img-box1 {
@@ -122,20 +134,14 @@
 
 #img-box1 {
     width: 100%;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;   
 }
 
 .text-box1 {
     width: 60%;
 }
-.text-box1 h1 {
-    font-size: 25px;
-    margin-bottom: 7px;
-}
-
-.text-box1 h6 {
-    font-size: 15px;
-}
-
 
 
 .img-box2 {
@@ -144,20 +150,15 @@
 
 #img-box2 {
     width: 100%;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;   
 }
 
 .text-box2 {
     width: 60%;
 }
 
-.text-box2 h1 {
-    font-size: 25px;
-    margin-bottom: 7px;
-}
-
-.text-box2 h6 {
-    font-size: 15px;
-}
 
 
 .img-box3 {
@@ -166,31 +167,56 @@
 
 #img-box3 {
     width: 100%;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;   
 }
 
 .text-box3 {
     width: 60%;
 }
-.text-box3 h1 {
-    font-size: 25px;
-    margin-bottom: 7px;
-}
-
-.text-box3 h6 {
-    font-size: 15px;
-}
 
 .text-box1, .text-box2, .text-box3{
     margin-left: 30px;
+    margin-top: 10px;
     text-align: left;
 }
+
 /* Only touch if adjust space between two Left and Right divs */
 .space {
     margin: 20px;
 }
 /* Up */
 
+.rightSide2 {
+
+}
+
 #img-rightSide2 {
     width: 80%;
     height: 85%;
+}
+
+#img-rightSide2:hover {
+    animation: shake 0.5s;
+
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#test {
+    border: red;
 }
