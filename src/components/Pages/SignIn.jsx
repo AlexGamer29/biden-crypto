@@ -15,7 +15,6 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
   };
 
   const onChange = (e) => {
@@ -70,10 +69,12 @@ const SignIn = () => {
       placeholder: "Confirm Password",
       errorMessage: "Password does not match",
       label: "Confirm Password",
-      pattern: values.password,
+      pattern: `${values.password}`,
       required: true,
     },
   ];
+
+  console.log(values);
 
   return (
     <div className="form">

@@ -1,0 +1,43 @@
+.formContact {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.selector {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+label {
+    font-size: 0.8rem;
+    color: gray;
+    text-align: left;
+}
+
+input {
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+select {
+    padding: 14px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: left;
+}
+
+textarea {
+    font-family: inherit;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+
