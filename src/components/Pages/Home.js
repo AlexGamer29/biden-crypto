@@ -18,8 +18,8 @@ export const Home = () => {
         <div className="rightSide1">
           <div className="border-img" id="phone-img">
             <svg
-              width={680}
-              height={956}
+              width={480}
+              height={756}
               viewBox="0 0 680 956"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +172,7 @@ export const Home = () => {
             </div>
             <div className="box2">
               <div className="img-box2">
-                <img id="img-box2" src="https://i.pinimg.com/564x/de/a1/f1/dea1f13f38fd6b28d6fd271f901de6e8.jpg" alt="img"></img>
+                <img id="img-box2" src="https://us.123rf.com/450wm/axis213/axis2132001/axis213200100289/140288262-time-icon-time-and-watch-timer-symbol-ui-web-sign-flat-design-app-stock-passage-of-time-icon-.jpg?ver=6" alt="img"></img>
               </div>
               <div className="text-box2">
                 <h1>Recurring buys</h1>
@@ -193,7 +193,7 @@ export const Home = () => {
             {/* Just space, dont touch */}
           </div>
           <div className="rightSide2">
-            <img id="img-rightSide2" src="https://i.pinimg.com/564x/38/d6/32/38d632ac63ac22d3ee285a67f71be9cf.jpg" alt="img"></img>
+            <img id="img-rightSide2" src="https://img.freepik.com/free-vector/display-stock-market-quotes-falling-graph-candlestick-graph-white-background-stock-market-investment-trades_174639-40475.jpg?w=2000" alt="img"></img>
           </div>
         </div>
       </div>

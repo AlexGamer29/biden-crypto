@@ -6,7 +6,7 @@
     width: max-content;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 5px;
     /* background-color: blue; */
 }
 
@@ -15,12 +15,10 @@
 }
 .leftSide1 {
     width: 50%;
-    margin-top: 70px;
-    margin-right: 150px;
+    margin-top: 90px;
+    margin-right: 80px;
     display: flex;
     flex-direction: column;
-
-    /* background-color: black; */
 }
 
 .leftSide1 a {
@@ -63,14 +61,14 @@
 .border-img {
     align-self: center;
     width: 35%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 130px;
-    border: 2px solid gray;
+    /* border: 2px solid gray;
     border-radius: 2%;
 
     -moz-box-shadow: 10px 10px 5px #ccc;
     -webkit-box-shadow: 10px 10px 5px #ccc;
-    -khtml-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc; */
 }
 
 #body-img {
@@ -94,7 +92,7 @@
 }
 
 .in_content2 {
-    margin-top: 120px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -105,14 +103,15 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    /* height: 100%; */
+    margin-top: 40px;
     margin-left: 100px;
     margin-right: 10px;
 }
 
+
 .box1, .box2, .box3 {
-    height: 30%;
-    margin: 10px;
+    height: 20%;
+    margin: 30px;
     display: flex;
     flex-direction: row;
 }
@@ -129,13 +128,13 @@
 
 .img-box1 {
     width: 40%;
-    -moz-box-shadow: 10px 10px 5px #ccc;
-    -webkit-box-shadow: 10px 10px 5px #ccc;
-    -khtml-box-shadow: 10px 10px 5px #ccc;   
 }
 
 #img-box1 {
     width: 100%;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;   
 }
 
 .text-box1 {
@@ -149,6 +148,9 @@
 
 #img-box2 {
     width: 100%;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;   
 }
 
 .text-box2 {
@@ -163,6 +165,9 @@
 
 #img-box3 {
     width: 100%;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;   
 }
 
 .text-box3 {
@@ -180,7 +185,7 @@
 /* Up */
 
 .rightSide2 {
-    margin-top: 20px;
+
 }
 
 #img-rightSide2 {
