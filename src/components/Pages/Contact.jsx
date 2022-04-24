@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import FormInput from "./FormInput.jsx";
 import Hooks from "./Hooks.jsx";
 import "../css/contact.css";
-import { Test } from "./Test.jsx";
+import {FormContact} from "./FormContact.jsx";
 
 export const Contact = () => {
 
@@ -62,8 +62,8 @@ export const Contact = () => {
         ))}
         <button>Sign In</button>
       </form> */}
-
-      <Test/>
+      <FormContact/>
+      
     </div>
   );
 };

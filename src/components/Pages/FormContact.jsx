@@ -5,41 +5,34 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
 import "../css/formContact.css"
 
-export const Test = () => {
-    const schema = Yup.object().shape({
-        fullname: Yup.string()
-            .required('Fullname is required')
-            .min(3, 'Fullname must be at least 3 characters')
-            .max(50, 'Fullname must be less than 50 characters'),
-        email: Yup.string()
-            .email('Invalid email')
-            .required('Email is required'),
-        usePlatform: Yup.string()
-            .required('Use platform is required'),
-        primaryResidence: Yup.string()
-            .required('Primary residence is required'),
-        language: Yup.string()
-            .required('Language is required'),
-        helpList: Yup.string()
-            .required('Help list is required'),
-        topicRequest: Yup.string()
-            .required('Topic request is required'),
-        detailDescription: Yup.string()
-            .required('Detail description is required'),
-    })
+const schema = Yup.object().shape({
+    fullname: Yup.string()
+        .required('Fullname is required')
+        .min(3, 'Fullname must be at least 3 characters')
+        .max(50, 'Fullname must be less than 50 characters'),
+    email: Yup.string()
+        .email('Invalid email')
+        .required('Email is required'),
+    usePlatform: Yup.string()
+        .required('Use platform is required'),
+    primaryResidence: Yup.string()
+        .required('Primary residence is required'),
+    language: Yup.string()
+        .required('Language is required'),
+    helpList: Yup.string()
+        .required('Help list is required'),
+    topicRequest: Yup.string()
+        .required('Topic request is required'),
+    detailDescription: Yup.string()
+        .required('Detail description is required'),
+})
 
-    const validationOpt = { resolver: yupResolver(schema) }
+export const FormContact = () => {
+    const { register, handleSubmit, formState: {errors} } = useForm();
 
-    const { register, handleSubmit, watch, formState } = useForm(validationOpt);
-
-    const onSubmit = data => {
-        console.log(JSON.stringify(data, null, 4))
-        return false;
+    const onSubmit = (data) => {
+        console.log(data);
     }
-
-    const { errors } = formState;
-
-
 
     const usePlatform = [
         { value: 'browser', label: 'Web Browser' },
@@ -68,20 +61,33 @@ export const Test = () => {
 
     return (
         <form className="formContact" onSubmit={handleSubmit(onSubmit)}>
-            {/* <input defaultValue="test" {...register("example")} />
-
-            <input {...register("exampleRequired", { required: true })} />
-            {errors.exampleRequired && <span>This field is required</span>} */}
             <div className="formContact">
                 <label>Fullname</label>
-                <input type="text" {...register("fullname", { required: true })}
-                    className={`form-control ${errors.fullname ? 'is-invalid' : ''}`} />
-                <div className="invalid-feedback">{errors.name?.message}</div>
+                <input type="text" name="fullname" placeholder="Fullname" {...register("fullname", {
+                    required: true,
+                    minLength: 8,
+                    pattern: /^[A-Za-z]+$/i
+                })}
+                    />
+                {errors?.fullname?.type === "required" && <span>This field is required</span>}
+                {errors?.fullname?.type === "minLength" && (
+                    <span>First name must exceed at least 8 characters</span>
+                )}
+                {errors?.fullname?.type === "pattern" && (
+                    <span>Alphabetical characters only</span>
+                )}
             </div>
+
 
             <div className="formContact">
                 <label>Email</label>
-                <input {...register("email")} />
+                <input type="text" name="email" placeholder="Email" {...register("email", { 
+                    required: true,
+                    pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                 })} 
+                 />
+                {errors?.email?.type === "required" && <span>This field is required</span>}
+                {errors?.email?.type === "pattern" && (<span>Use a valid email address</span>)}
             </div>
 
             <div className="selector">
@@ -92,6 +98,7 @@ export const Test = () => {
                     ))}
                 </select>
             </div>
+
             <div className="selector">
                 <label>What is your primary residence?</label>
                 <select {...register("country")}>
@@ -121,39 +128,17 @@ export const Test = () => {
 
             <div className="formContact">
                 <label>What is the topic of your request?</label>
-                <input {...register("topicRequest")} />
+                <input type="text" name="topicRequest" {...register("topicRequest", { required: true })} />
+                {errors.topicRequest && <span>This field is required</span>}
             </div>
 
             <div className="formContact">
                 <label>Please describe your request in detail</label>
-                <textarea id="text-area" cols="30" rows="8" {...register("detailDescription")}></textarea>
-                {/* <input type={"textarea"} {...register("detailDescription")} /> */}
+                <textarea id="text-area" name="detailDescription" cols="30" rows="8" {...register("detailDescription", { required: true })}></textarea>
+                {errors.detailDescription && <span>This field is required</span>}
             </div>
 
-
-
-            <button type="submit">Submit</button>
-
-
-
-
-
-
-
-
-
-
-
-
-            {/* <label>
-                <input ref={register("agreeTerms",{required: true})}
-                name="agreeTerms"
-                value={true}
-                type="checkbox" />
-                Agree with terms
-            </label>
-            {errors.example_1 && <p class="error">{errors.example_1.message}</p>}
-            <br /> */}
+            <button type="submit" id="btn-submit">Submit</button>
 
         </form>
     );
