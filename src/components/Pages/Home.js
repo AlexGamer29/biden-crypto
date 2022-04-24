@@ -9,7 +9,7 @@ export const Home = () => {
       <div className="content1">
         <div className="leftSide1">
           <a href="/product">Jump directly to your market !!!</a>
-          <h1>Buy, trade, and hodl 100+ coins!</h1>
+          <h1>Buy, trade, and hold 100+ coins!</h1>
           <h4>Biden-crypto is the easiest place to buy <br></br> and sell cryptocurrency. Let's start your journey.</h4>
           {/* <button name="button" type="button" id="bt"
             >Get started

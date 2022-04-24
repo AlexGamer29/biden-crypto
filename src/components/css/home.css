@@ -26,7 +26,7 @@
 
 .leftSide1 a {
     font-size: 18px;
-    font-family: BinancePlex,Arial,sans-serif!important;
+    font-family: inherit;
     color: rgb(0 82 255);
     margin-left: 35%;
     margin-right: 18%;
@@ -36,7 +36,7 @@
 }
 
 .leftSide1 h1 {
-    font-family: BinancePlex,Arial,sans-serif!important;
+    font-family: inherit;
     font-size: 60px;
     color: black;
     text-align: left;
@@ -151,7 +151,7 @@
 
 .leftSide2 h6 {
     font-size: 17px;   
-    font-family: "Times New Roman", Georgia, serif; 
+    font-family: inherit; 
     text-align: left;
 }
 
