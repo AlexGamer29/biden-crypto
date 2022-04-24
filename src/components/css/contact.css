@@ -2,9 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 221, 64, 0.8);
 }
 
-form {
+#contact-container {
+    padding: 50px 0px 40px 0px;
+}
+
+/* form {
     background-color: white;
     padding: 0px 60px;
     border-radius: 10px;
@@ -30,4 +35,4 @@ button {
     cursor: pointer;
     margin-top: 15px;
     margin-bottom: 30px;
-}
+} */

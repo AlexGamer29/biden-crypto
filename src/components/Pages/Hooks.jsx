@@ -82,7 +82,6 @@ function Hooks(props) {
 
             <div className="selector" id="help-list">
                 <label>What can we help you with today?</label>
-
             </div>
 
         </div>

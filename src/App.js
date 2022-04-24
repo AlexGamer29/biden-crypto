@@ -14,17 +14,6 @@ function App() {
     <>
       <Router>
         <NavBar />
-
-        <div className="pages">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/product" component={Product} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/signin" component={SignIn} />
-          </Switch>
-        </div>
-        
         <footer>
           <Footer />
         </footer>
