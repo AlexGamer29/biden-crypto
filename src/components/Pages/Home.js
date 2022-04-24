@@ -155,6 +155,16 @@ export const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="blue-site">
+      <div id="blue-site1">
+      </div>      
+      <div id="blue-site2">
+      </div>
+      </div>
+
+
+
       <div className="content2">
         <h1 id="ct2_h1">Create your wonderful portfolio today</h1>
         <h6 id="ct2_h6">Biden-crypto has a variety of features that make it the most perfect place to start trading</h6>
