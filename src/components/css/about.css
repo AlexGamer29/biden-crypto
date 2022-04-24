@@ -2,6 +2,8 @@
     width: 100%;
 }
 
+
+
 .content1 {
     width: 100%;
     display: flex;
@@ -9,11 +11,17 @@
 }
 
 .leftSide1 {
-    width: 40%; 
+    width: 40%;
+    height: 100%;
 }
+
 .rightSide1 {
     width: fit-content;
-    height: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #right-heading {
@@ -33,10 +41,6 @@
     margin: 20px;
     width: 20%;
     height: 20%;
-}
-
-.content3 {
-    width: 100%;
 }
 
 .team-img {
@@ -64,4 +68,12 @@ p {
     font-size: 18px;
     font-family: inherit;
     font-weight: 400;
+}
+
+.partners-container {
+    display: flex;
+    flex-direction: row;
+    width: 300x;
+    height: 500px;
+    
 }
