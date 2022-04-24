@@ -1,16 +1,22 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-padding: 40px 0px 40x 0px;
+padding: 40px 0px 40px 0px;
 background: white;
 position: relative;
 bottom: 0;
+border-top: 2.5px solid rgb(236, 239, 241);
 width: 100%;
 
 
 @media (max-width: 1000px) {
 	padding: 50px 10px;
 }
+
+@media (max-width: 550px) {
+	padding: 20px 10px;
+}
+
 `;
 
 export const Container = styled.div`
@@ -32,12 +38,12 @@ margin-left: 60px;
 export const Row = styled.div`
 display: grid;
 grid-template-columns: repeat(auto-fill,
-						minmax(185px, 1fr));
+						minmax(250px, 1fr));
 grid-gap: 20px;
 
 @media (max-width: 1000px) {
 	grid-template-columns: repeat(auto-fill,
-						minmax(200px, 1fr));
+						minmax(250px, 1fr));
 }
 `;
 
