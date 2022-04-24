@@ -157,10 +157,7 @@ export const Home = () => {
       </div>
 
       <div className="blue-site">
-      <div id="blue-site1">
-      </div>      
-      <div id="blue-site2">
-      </div>
+      <div id="strip"></div>
       </div>
 
 
