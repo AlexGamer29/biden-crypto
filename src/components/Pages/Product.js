@@ -20,7 +20,7 @@ export const Product= () => {
   );
   return (
       <div className="main_content">
-          <h1>The most trusted cryptocurrency platform</h1>
+          <div className="header">The most trusted crypto currency platform</div>
           {listItems}
       </div>
   )
