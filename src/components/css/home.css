@@ -100,7 +100,8 @@
 .content2 {
     /* Delete this line below when you add animation */
     margin-top: 4%;
-    width: 100%;    
+    width: 100%;
+    margin-bottom: 5%;    
 }
 
 #ct2_h1 {
@@ -417,6 +418,7 @@
 
     .content2 {
         margin-top: 20px;
+        margin-bottom: 1%;
     }
 
     #ct2_h1 {
