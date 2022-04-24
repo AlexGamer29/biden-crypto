@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import FormInput from "./FormInput.jsx";
 import Hooks from "./Hooks.jsx";
 import "../css/contact.css";
-import {FormContact} from "./FormContact.jsx";
+import { FormContact } from "./FormContact.jsx";
 
 export const Contact = () => {
 
@@ -49,8 +49,8 @@ export const Contact = () => {
   ];
 
   return (
-    <div className="contact-content">
-      {/* <form onSubmit={handleSubmit}>
+      <div className="contact-content" id="contact-container" >
+        {/* <form onSubmit={handleSubmit}>
         <h1>Register</h1>
         {inputs.map((input) => (
           <FormInput
@@ -62,8 +62,8 @@ export const Contact = () => {
         ))}
         <button>Sign In</button>
       </form> */}
-      <FormContact/>
-      
-    </div>
+        <FormContact />
+
+      </div>
   );
 };
