@@ -170,14 +170,14 @@ nav .search .fa + .fa {
 }
 
 .main_content .card:hover {
-  background-color: #2b3039;
+  background-color: rgb(225, 193, 53);
   -webkit-transform: scale(1);
   transform: scale(1);
   cursor: pointer;
 }
 
 .main_content .card:hover .btn {
-  background-color: #fe8033;
+  background-color: black;
   color: #fff;
 }
 
