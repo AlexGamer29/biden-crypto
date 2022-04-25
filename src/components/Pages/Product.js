@@ -21,6 +21,7 @@ export const Product= () => {
   return (
       <div className="main_content">
           <div className="header">The most trusted crypto currency platform</div>
+          <div className="text-below-header">Coinbase has a variety of features that make it the best place to start trading</div>
           {listItems}
       </div>
   )

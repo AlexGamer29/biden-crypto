@@ -182,7 +182,7 @@ nav .search .fa + .fa {
 }
 
 .btn {
-  width: 130px;
+  width: 130px !important;
   height: 35px;
   font-size: 14px;
   border-radius: 35px;
@@ -222,6 +222,15 @@ nav .search .fa + .fa {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+.text-below-header{
+  width: 100%;
+  color: gray;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media only screen and (max-width: 550px) {
   .main_content {
