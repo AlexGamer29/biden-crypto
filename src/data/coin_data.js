@@ -27,22 +27,8 @@ const coin_card = [
     currency: "$",
     img: etherium,
   },
-  {
-    id: 4,
-    coin_name: "Etherium",
-    description: "",
-    price: 3015,
-    currency: "$",
-    img: etherium,
-  },
-  {
-    id: 5,
-    coin_name: "Etherium",
-    description: "",
-    price: 3015,
-    currency: "$",
-    img: etherium,
-  },
+
+ 
   
 
 ];

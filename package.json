@@ -5,7 +5,7 @@
   "engines": {
     "node": "17.3.0",
     "npm": "8.5.5"
-},
+  },
   "dependencies": {
     "@hookform/resolvers": "^2.8.8",
     "@testing-library/jest-dom": "^5.11.6",
@@ -21,6 +21,7 @@
     "react-scripts": "^4.0.1",
     "react-select": "^5.3.0",
     "react-select-country-list": "^2.2.3",
+    "react-super-responsive-table": "^5.2.0",
     "styled-components": "^5.3.5",
     "sudo": "^1.0.3",
     "web-vitals": "^0.2.4",
